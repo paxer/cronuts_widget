@@ -30,4 +30,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  cronut_acceptance_widget: "Cronut acceptance widget"
+  by_selecting_this_checkbox_you_agree_that: "By selecting this checkbox, you agree that"
+  cronuts: "cronuts"
+  are_better_than: "are better than"
+  donuts: "donuts"
