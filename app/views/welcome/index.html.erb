@@ -39,4 +39,9 @@
 
 Finally email us with your link or zip file.
 
-<%= render partial: 'shared/cronut_acceptance_widget' %>
+<%= render partial: 'shared/cronut_acceptance_widget',
+           locals: {
+               cronuts_url: params[:cronuts_url],
+               donuts_url: params[:donuts_url]
+           }
+%>
