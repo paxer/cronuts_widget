@@ -2,9 +2,9 @@
 <div class="challenge_box">
   <%= label_tag 'terms_checkbox' do %>
     <%= t('by_selecting_this_checkbox_you_agree_that') %>
-    <a href="<%= defined?(cronuts_url) ? cronuts_url : 'https://upload.wikimedia.org/wikipedia/commons/8/8b/April_2016_Cronut%C2%AE_2_Burnt_Vanilla_Caramel_-_photo_by_Dominique_Ansel_Bakery.jpg' %>" target="_blank"><%= t('cronuts') %></a>
+    <a id="cronuts_url" href="<%= defined?(cronuts_url) && cronuts_url.present? ? cronuts_url : 'https://upload.wikimedia.org/wikipedia/commons/8/8b/April_2016_Cronut%C2%AE_2_Burnt_Vanilla_Caramel_-_photo_by_Dominique_Ansel_Bakery.jpg' %>" target="_blank"><%= t('cronuts') %></a>
     <%= t('are_better_than') %>
-    <a href="<%= defined?(donuts_url) ? donuts_url : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glazed-Donut.jpg/250px-Glazed-Donut.jpg' %>" target="_blank"><%= t('donuts') %></a>
+    <a id="donuts_url" href="<%= defined?(donuts_url) && donuts_url.present? ? donuts_url : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glazed-Donut.jpg/250px-Glazed-Donut.jpg' %>" target="_blank"><%= t('donuts') %></a>
   <% end %>
   <%= check_box_tag 'terms_checkbox' %>
 </div>
